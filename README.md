@@ -57,3 +57,25 @@
   check plumbing
   check electrics
   ```
+
+- Class inheritance
+
+  Creating a thatched cottage -
+
+  ```php
+  /**
+   * Example class for a thatched cottage
+   */
+  class ThatchedCottage extends Cottage
+  {
+      /**
+      * Initialise the object
+      */
+      public function _construct()
+      {
+          parent::__construct();
+
+          // specific to this extended class
+      }
+  }
+  ```
