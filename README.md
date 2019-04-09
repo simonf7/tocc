@@ -31,3 +31,12 @@
       }
   }
   ```
+
+- An object
+
+  Creating a object of class cottage -
+
+  ```php
+  // instantiate
+  $myCottage = new Cottage();
+  ```

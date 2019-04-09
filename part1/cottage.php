@@ -22,3 +22,6 @@ class Cottage
         echo "check electrics\r\n";
     }
 }
+
+// instantiate
+$myCottage = new Cottage();
