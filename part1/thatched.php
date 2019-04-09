@@ -37,4 +37,21 @@ class ThatchedCottage extends Cottage
 
         // specific to this extended class
     }
+
+    /**
+     * Maintain the thatched cottage
+     */
+    public function doMaintenance()
+    {
+        // perform standard cottage maintenance
+        parent::doMaintenance();
+
+        echo "check the thatched roof\r\n";
+    }
 }
+
+// instantiate
+$myCottage = new ThatchedCottage();
+
+// maintain the cottage
+$myCottage->doMaintenance();
