@@ -40,3 +40,20 @@
   // instantiate
   $myCottage = new Cottage();
   ```
+
+- Calling a method of a class
+
+  ```php
+  // maintain the cottage
+  $myCottage->doMaintenance();
+  ```
+
+  Should output -
+
+  ```
+  $ php cottage.php
+
+  check heating
+  check plumbing
+  check electrics
+  ```

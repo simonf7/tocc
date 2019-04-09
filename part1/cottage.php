@@ -25,3 +25,6 @@ class Cottage
 
 // instantiate
 $myCottage = new Cottage();
+
+// maintain the cottage
+$myCottage->doMaintenance();
