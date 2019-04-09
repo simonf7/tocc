@@ -8,21 +8,21 @@
 
   ```php
   /**
-  * Example class for a cottage
-  */
+   * Example class for a cottage
+   */
   class Cottage
   {
       /**
-      * Initialise the object
-      */
+       * Initialise the object
+       */
       public function __construct()
       {
           //
       }
 
       /**
-      * Maintain the cottage
-      */
+       * Maintain the cottage
+       */
       public function doMaintenance()
       {
           echo "check heating\r\n";
