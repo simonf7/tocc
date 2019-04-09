@@ -255,3 +255,41 @@ The `part1` folder contains PHP files to support the answers below.
   A possible use of a singleton would be a database connection where in general you only want one connection to be made.
 
   Another could be for logging as there would normally be a single log file so you might only want one object writing to it.
+
+#### Problem
+
+Below is a simple recursive function to calculate the factorial of a number -
+
+```php
+/**
+ * Function to calculate the factorial of a number
+ *
+ * @param int number to create the factorial of
+ *
+ * @return the calculated factorial
+ */
+function factorial($number)
+{
+    if ($number > 1) {
+        return $number * factorial($number - 1);
+    }
+
+    return 1;
+}
+```
+
+Adding some code to test the function with the supplied answers of 6! = 720 and 4! = 24 -
+
+```php
+// test the function
+echo "6! = ".factorial(6)."\r\n";
+echo "4! = ".factorial(4)."\r\n";
+```
+
+Running this should output -
+
+```bash
+$ php factorial/factorial.php
+6! = 720
+4! = 24
+```
