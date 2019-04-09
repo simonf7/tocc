@@ -4,6 +4,8 @@
 
 #### Part 1: General Programming
 
+The `part1` folder contains PHP files to support the answers below.
+
 - A class
 
   ```php
@@ -48,10 +50,10 @@
   $myCottage->doMaintenance();
   ```
 
-  Should output -
+  Run the following to test which should output -
 
-  ```
-  $ php cottage.php
+  ```bash
+  $ php part1/cottage.php
   check heating
   check plumbing
   check electrics
@@ -118,8 +120,8 @@
 
    Instantiating and calling `doMaintenance` should output -
 
-   ```
-   $ php thatched.php
+   ```bash
+   $ php part1/thatched.php
    check heating
    check plumbing
    check electrics
@@ -178,8 +180,8 @@
 
    The above should output -
 
-   ```
-   $ php compare.php
+   ```bash
+   $ php part1/compare.php
    1
    -1
    0
@@ -243,7 +245,7 @@
   To test -
 
   ```php
-  $ php singleton.php
+  $ php part1/singleton.php
   ```
 
   The exact same number should be output three times.
