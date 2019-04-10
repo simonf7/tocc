@@ -139,7 +139,7 @@ The `part1` folder contains PHP files to support the answers below.
 
    Using `compare(1, 2)` or `compare("one", "two")` the compiler will use the correct version of the function.
 
-   This can be emulated using the PHP magic function `__call` - a simple class to implementing a function `compare` to compare either numbers or strings -
+   This can be emulated using the PHP magic function `__call` - a simple class to implement a function `compare` to compare either numbers or strings -
 
    ```php
    /**
@@ -293,3 +293,21 @@ $ php factorial/factorial.php
 6! = 720
 4! = 24
 ```
+
+#### Frontend
+
+All files related to this task are within the `frontend` folder.
+
+A basic workflow using Gulp and SASS has been set up, for development the .html and .scss files are in the `dev` folder. To begin development make sure npm is installed and run (making sure you are in the `frontend` folder) -
+
+```bash
+$ npm install
+```
+
+To make any changes, first run -
+
+```bash
+$ gulp watch
+```
+
+A browser will be opened and any changes made to `dev/index.html` or any .scss files will be automatically reflected.
