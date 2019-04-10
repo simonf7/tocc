@@ -36,3 +36,11 @@ gulp.task(
     });
   })
 );
+
+// copy the required files from the dev folder to dist
+gulp.task(
+  'dist',
+  gulp.series('sass', function() {
+    return gulp.src(['dev/*.css', 'dev/*.html']).pipe(gulp.dest('dist'));
+  })
+);
