@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Test</title>
+
+    <script>
+      // perform a quick validation of the form, for example valid email address etc.
+      function checkForm() {
+        return true;
+      }
+    </script>
   </head>
   <body>
     <div id="outer-container">
@@ -17,19 +24,23 @@
         </h2>
       </header>
       <main>
-        <form>
-          <input type="text" name="name" placeholder="Name:" />
-          <br />
-          <input type="text" name="email" placeholder="Email:" />
-          <br />
-          <input type="text" name="phone" placeholder="Phone:" />
-          <br />
-          <textarea name="message" placeholder="Message:"></textarea>
-          <div id="security-check">
-            Security Check
-          </div>
-          <input type="submit" value="Enquire Now" />
-        </form>
+        <div class="form-container">
+          <!-- for interaction with a server, should be changed to POST and action points to the server side submission script -->
+          <form method="GET" action="" onsubmit="return checkForm();">
+            <input type="text" name="name" placeholder="Name:" />
+            <br />
+            <input type="text" name="email" placeholder="Email:" />
+            <br />
+            <input type="text" name="phone" placeholder="Phone:" />
+            <br />
+            <textarea name="message" placeholder="Message:" rows="5"></textarea>
+            <div id="security-check">
+              Security Check<br />
+              This is where some form of captcha would go.
+            </div>
+            <button type="submit" value="Submit">Enquire Now</button>
+          </form>
+        </div>
       </main>
     </div>
   </body>

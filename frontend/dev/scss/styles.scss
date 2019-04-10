@@ -1,5 +1,110 @@
+/**
+ * Define colours
+ */
+
+$color-light-grey: rgb(94, 94, 94);
+$color-dark-grey: rgb(52, 52, 52);
+
+$color-bright-green: rgb(190, 197, 13);
+
+$color-button-green: rgb(79, 156, 65);
+
+/**
+ * Styles
+ */
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $color-dark-grey;
+  background-image: radial-gradient($color-light-grey, $color-dark-grey);
+  font-family: sans-serif;
+  height: 100%;
+}
+
+#outer-container {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+header {
+  padding: 50px 0 20px;
+}
+
+.heading {
+  color: $color-bright-green;
+  font-size: 12pt;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.subheading {
+  color: white;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 18pt;
+  font-weight: normal;
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .heading {
+    font-size: 28pt;
+  }
+
+  .subheading {
+    font-size: 40pt;
+  }
+}
+
+@media only screen and (min-width: 999px) {
+  .heading {
+    font-size: 32pt;
+  }
+
+  .subheading {
+    font-size: 46pt;
+  }
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 224px;
+
+  #security-check {
+    color: white;
+    font-size: 8pt;
+    text-align: left;
+  }
+
+  input,
+  textarea {
+    background-color: white;
+    border: 0;
+    border-radius: 3px;
+    color: #444444;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 9pt;
+    margin: 4px 0;
+    padding: 8px;
+    resize: none;
+    width: 100%;
+  }
+
+  button {
+    background-color: $color-button-green;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 9pt;
+    margin: 12px 0;
+    padding: 8px;
+    width: 100%;
+  }
 }
