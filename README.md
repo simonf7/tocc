@@ -336,6 +336,6 @@ I've made a few assumptions while implementing this solutions and in a "real" pr
 
 - I've selected web safe fonts which I think look close to the design.
 
-- I've taken the liberty of adding some simple mouse over colours changes to each form element.
+- I've taken the liberty of adding some simple mouse over colour changes to each form element.
 
-- A further development would be the addition of client side error checking, for example preventing submission of incorrectly formatted email addresses or required fields not being filled in.
+- A further development would be the addition of client side error checking, for example preventing submission of incorrectly formatted email addresses or required fields not being filled in. As such I've not specified the min/max length of each field.
