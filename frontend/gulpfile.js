@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 // compile sass into css
 gulp.task('sass', function() {
@@ -9,6 +10,12 @@ gulp.task('sass', function() {
     .src('dev/scss/**/*.scss')
     .pipe(sass())
     .pipe(concat('styles.css'))
+    .pipe(
+      autoprefixer({
+        browsers: ['last 3 versions'],
+        cascade: false
+      })
+    )
     .pipe(gulp.dest('dev'))
     .pipe(browserSync.stream());
 });
@@ -16,7 +23,7 @@ gulp.task('sass', function() {
 // watch for changes to any files
 gulp.task(
   'watch',
-  gulp.series(function() {
+  gulp.parallel('sass', function() {
     browserSync.init({
       server: {
         baseDir: 'dev'
