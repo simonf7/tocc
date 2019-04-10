@@ -70,6 +70,10 @@ header {
     padding: 8px;
     resize: none;
     width: 100%; }
+    .form-container input:hover, .form-container input:focus,
+    .form-container textarea:hover,
+    .form-container textarea:focus {
+      background-color: whitesmoke; }
   .form-container button {
     background-color: #4f9c41;
     border: 0;
@@ -80,3 +84,5 @@ header {
     margin: 12px 0;
     padding: 8px;
     width: 100%; }
+    .form-container button:hover {
+      opacity: 0.9; }
