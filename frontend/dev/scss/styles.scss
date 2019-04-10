@@ -1,9 +1,7 @@
+// imports
 @import 'colours';
 
-/**
- * Styles
- */
-
+// styles
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +16,7 @@ body {
   height: 100%;
 }
 
-#outer-container {
+.outer-container {
   height: 100%;
   text-align: center;
   width: 100%;
@@ -29,14 +27,14 @@ header {
 }
 
 .heading {
-  color: $color-bright-green;
+  color: $color-heading-text;
   font-size: 12pt;
   font-weight: lighter;
   text-transform: uppercase;
 }
 
 .subheading {
-  color: white;
+  color: $color-subheading-text;
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 18pt;
   font-weight: normal;
@@ -67,18 +65,18 @@ header {
   margin: 0 auto;
   width: 224px;
 
-  #security-check {
-    color: white;
+  .security-check {
+    color: $color-body-text;
     font-size: 8pt;
     text-align: left;
   }
 
   input,
   textarea {
-    background-color: white;
+    background-color: $color-control;
     border: 0;
     border-radius: 3px;
-    color: #444444;
+    color: $color-control-text;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     font-size: 9pt;
     margin: 4px 0;
@@ -88,14 +86,14 @@ header {
 
     &:hover,
     &:focus {
-      background-color: whitesmoke;
+      background-color: $color-control-hover;
     }
   }
 
   button {
-    background-color: $color-button-green;
+    background-color: $color-button;
     border: 0;
-    color: white;
+    color: $color-button-text;
     cursor: pointer;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     font-size: 9pt;
@@ -104,7 +102,7 @@ header {
     width: 100%;
 
     &:hover {
-      opacity: 0.9;
+      background-color: $color-button-hover;
     }
   }
 }

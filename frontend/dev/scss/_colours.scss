@@ -1,10 +1,21 @@
-/**
- * Define colours
- */
-
+// define colours
 $color-light-grey: rgb(94, 94, 94);
 $color-dark-grey: rgb(52, 52, 52);
 
-$color-bright-green: rgb(190, 197, 13);
+$color-white: rgb(255, 255, 255);
+$color-whitesmoke: rgb(245, 245, 245);
 
-$color-button-green: rgb(79, 156, 65);
+// buttons
+$color-button: rgb(79, 156, 65);
+$color-button-hover: rgb(87, 171, 71);
+$color-button-text: $color-white;
+
+// form controls
+$color-control: $color-white;
+$color-control-hover: $color-whitesmoke;
+$color-control-text: $color-dark-grey;
+
+// text
+$color-body-text: $color-white;
+$color-heading-text: rgb(190, 197, 13);
+$color-subheading-text: $color-white;
