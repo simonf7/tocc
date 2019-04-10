@@ -2,7 +2,7 @@
 
 ## Web Developer recruitment test
 
-#### Part 1: General Programming
+### Part 1: General Programming
 
 The `part1` folder contains PHP files to support the answers below.
 
@@ -139,7 +139,7 @@ The `part1` folder contains PHP files to support the answers below.
 
    Using `compare(1, 2)` or `compare("one", "two")` the compiler will use the correct version of the function.
 
-   This can be emulated using the PHP magic function `__call` - a simple class to implementing a function `compare` to compare either numbers or strings -
+   This can be emulated using the PHP magic function `__call` - a simple class to implement a function `compare` to compare either numbers or strings -
 
    ```php
    /**
@@ -256,7 +256,7 @@ The `part1` folder contains PHP files to support the answers below.
 
   Another could be for logging as there would normally be a single log file so you might only want one object writing to it.
 
-#### Problem
+### Problem - Factorial Function
 
 Below is a simple recursive function to calculate the factorial of a number -
 
@@ -293,3 +293,49 @@ $ php factorial/factorial.php
 6! = 720
 4! = 24
 ```
+
+### Frontend Task
+
+All files related to this task are within the `frontend` folder.
+
+A basic workflow using Gulp and SASS has been set up, for development the .html and .scss files are in the `dev` folder. To begin development make sure npm is installed and run (making sure you are in the `frontend` folder) -
+
+```bash
+$ npm install
+```
+
+To make any changes, first run -
+
+```bash
+$ gulp watch
+```
+
+A browser will be opened and any changes made to `dev/index.html` or any .scss files will be automatically reflected.
+
+##### Distribution
+
+A second gulp task has been added which copies the required files for distribtion -
+
+```bash
+$ gulp dist
+```
+
+This copies `index.html` and `styles.css` to the `dist` folder. I've added these to the GIT repository as my submission for this part of the test - normally the `dist` folder would be added to the `.gitignore` file and not included in the repository.
+
+In a full project the CSS file would also be minified while being prepared for distribution/release.
+
+##### Observations
+
+I've made a few assumptions while implementing this solutions and in a "real" project would go back to the designer and/or project lead for clarification.
+
+- I've assumed the text shown in each form field is meant to be a placeholder to highlight the function of the field.
+
+- As I've assumed the design shows placeholders these aren't very accessible and there should ideally be some labels which accessibility tools such as screen readers look for.
+
+- I've made an educated guess at the field text colour as placeholders tend to be lighter.
+
+- I've selected web safe fonts which I think look close to the design.
+
+- I've taken the liberty of adding some simple mouse over colour changes to each form element.
+
+- A further development would be the addition of client side error checking, for example preventing submission of incorrectly formatted email addresses or required fields not being filled in. As such I've not specified the min/max length of each field.
