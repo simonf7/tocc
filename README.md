@@ -326,7 +326,7 @@ In a full project the CSS file would also be minified while being prepared for d
 
 ##### Observations
 
-I've made a few assumptions while implementing this solutions and in a "real" project would go back to the designer and/or project lead for clarification.
+I've made a few assumptions while implementing this solution and in a "real" project would go back to the designer and/or project lead for clarification.
 
 - I've assumed the text shown in each form field is meant to be a placeholder to highlight the function of the field.
 
@@ -338,4 +338,4 @@ I've made a few assumptions while implementing this solutions and in a "real" pr
 
 - I've taken the liberty of adding some simple mouse over colour changes to each form element.
 
-- A further development would be the addition of client side error checking, for example preventing submission of incorrectly formatted email addresses or required fields not being filled in. As such I've not specified the min/max length of each field.
+- A further development would be the addition of client side error checking and feedback - this also helps with accessibilty. For example preventing submission of incorrectly formatted email addresses or required fields not being filled in. As such I've not specified the min/max length of each field.
